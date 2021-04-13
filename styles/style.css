@@ -1,0 +1,130 @@
+:root {
+  font-size: 13px;
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightGrayishBlue);
+}
+
+article {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  background-color: #fff;
+  color: var(--veryDarkGrayishBlue);
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+
+.display-img {
+  flex: 1.5;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px 0px 0px 10px;
+  overflow: hidden;
+}
+
+.article-content {
+  flex: 2;
+  padding: 30px;
+}
+
+.article-content h2,
+.article-content p {
+  margin-bottom: 15px;
+}
+
+span {
+  font-weight: 500;
+}
+
+.display-img img {
+  width: 350px;
+  position: absolute;
+  top: 50;
+  top: 50;
+}
+
+.profile {
+  display: flex;
+  position: relative;
+}
+
+.profile-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.profile-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile p {
+  margin: 0;
+}
+
+.share-icon {
+  align-self: center;
+  background-color: var(--lightGrayishBlue);
+  padding: 7px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(300px);
+  cursor: pointer;
+}
+
+.pop-up {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--veryDarkGrayishBlue);
+  color: var(--lightGrayishBlue);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(100px, -70px);
+  border-radius: 5px;
+  justify-content: space-around;
+  display: none;
+}
+
+.pop-up-share {
+  letter-spacing: 4px;
+}
+
+.pop-up-img img {
+  margin: 5px;
+  width: 16px;
+  align-self: center;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  background-color: var(--veryDarkGrayishBlue);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 32px;
+}
