@@ -31,7 +31,6 @@ article {
   background-color: #fff;
   color: var(--veryDarkGrayishBlue);
   border-radius: 10px;
-  /* overflow: hidden; */
 }
 
 .display-img {
@@ -127,4 +126,28 @@ span {
   transform: rotate(45deg);
   position: absolute;
   top: 32px;
+}
+
+@media screen and (max-width: 711px) {
+  article {
+    flex-direction: column;
+    width: 325px;
+    height: 70vh;
+    justify-content: space-between;
+  }
+  .article-content {
+    padding: 15px;
+  }
+  .display-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .display-img img {
+    width: 100%;
+  }
+  .profile {
+  }
+  .share-icon {
+    transform: translateX(250px);
+  }
 }
